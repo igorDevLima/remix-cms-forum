@@ -1,3 +1,13 @@
-body{
-    background-color: red;
+:root {
+  --background-body: #fafbfc;
+  --background-nav: #fff;
+  --border: #d4dbe0;
+  --primary: #ff4500;
+
+  --font-color: #262626;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.25rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 }
