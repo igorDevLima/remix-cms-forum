@@ -1,0 +1,74 @@
+#sidebar nav a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: 20px;
+
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.57rem;
+  color: #a4aeb4;
+  cursor: pointer;
+}
+
+#sidebar nav a .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-left: 2.219em;
+}
+
+#sidebar nav a .border-left-hover,
+#sidebar nav a .nav-icon {
+  transition: all 300ms;
+}
+
+#sidebar nav a #border-left-hover {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary);
+  border-radius: 0px 3px 3px 0px;
+}
+
+#sidebar nav a:hover #border-left-hover,
+#sidebar nav a.active #border-left-hover {
+  width: 0.2em;
+}
+
+#sidebar nav a .nav-icon {
+  background-color: #a4aeb4;
+}
+
+#sidebar nav a:hover,
+#sidebar nav a.active {
+  background: #f4f6fa;
+  color: inherit;
+}
+
+#sidebar nav a:hover .nav-icon,
+#sidebar nav a.active .nav-icon {
+  background-color: var(--primary);
+}
+
+#sidebar nav a.pending {
+  animation: progress 2s infinite ease-in-out;
+  animation-delay: 200ms;
+}
+
+@keyframes progress {
+  0% {
+    background: #f4f6fa;
+  }
+  50% {
+    background: var(--primary);
+  }
+  100% {
+    background: #f4f6fa;
+  }
+}
