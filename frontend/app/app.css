@@ -73,6 +73,10 @@ main .main-header {
   padding-left: 3.94em;
 }
 
+main .main-header #open-sidebar-icon {
+  display: none;
+}
+
 main .main-header .search-input-container {
   display: flex;
   align-items: center;
@@ -91,5 +95,20 @@ main .main-content {
 @media screen and (max-width: 810px) {
   .container {
     grid-template-columns: 1fr;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  main .main-header {
+    justify-content: space-between;
+    padding: 0 1.95em;
+    gap: 10px;
+  }
+
+  main .main-header #open-sidebar-icon {
+    display: block;
+    width: 24px;
   }
 }
