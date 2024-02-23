@@ -2,7 +2,7 @@
 import redditLogoImage from "../../../public/images/Logo_reddit.svg"
 import iconHome from "../../../public/icons/icon-home.svg"
 import iconHot from "../../../public/icons/icon-hot.svg"
-import iconTrending from "../../../public/icons/icon-trending.svg"
+import iconRecent from "../../../public/icons/icon-trending.svg"
 import iconClose from "../../../public/icons/icon-close.svg"
 
 import type { LinksFunction } from '@remix-run/node'
@@ -39,13 +39,13 @@ export const Sidebar = (() => {
                 <h2>feeds</h2>
                 <SidebarNavItem iconUrl={iconHome} label="Home" to="/" />
                 <SidebarNavItem iconUrl={iconHot} label="Hot" to="/" />
-                <SidebarNavItem iconUrl={iconTrending} label="Recent" to="/" />
+                <SidebarNavItem iconUrl={iconRecent} label="Recent" to="/" />
             </nav>
             <nav>
                 <h2>My communities</h2>
                 <SidebarNavItem iconUrl={iconHome} label="Home" to="/" />
                 <SidebarNavItem iconUrl={iconHot} label="Hot" to="/" />
-                <SidebarNavItem iconUrl={iconTrending} label="Recent" to="/" />
+                <SidebarNavItem iconUrl={iconRecent} label="Recent" to="/" />
             </nav>
         </div>
     </div>
