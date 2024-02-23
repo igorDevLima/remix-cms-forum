@@ -16,8 +16,10 @@ import redditLogoImage from "../public/images/Logo_reddit.svg"
 import iconHome from "../public/icons/icon-home.svg"
 import iconHot from "../public/icons/icon-hot.svg"
 import iconTrending from "../public/icons/icon-trending.svg"
+import iconSearch from "../public/icons/icon-search.svg"
 
 import { SidebarNavItem, links as SidebarNavItemLinks } from "./components/SidebarNavItem";
+import { SvgEdit } from "./components/SvgEdit";
 
 
 export const links: LinksFunction = () => [
@@ -54,7 +56,12 @@ export default function App() {
             </div>
           </div>
           <main>
-            <header className="main-header"></header>
+            <header className="main-header">
+              <div className="search-input-container">
+                <SvgEdit svgUrl={iconSearch} className="search-icon"/>
+                <input type="search" placeholder="Search a post or community" name="search" id="input-search" />
+              </div>
+            </header>
             <div className="main-content">
               <Outlet />
             </div>
