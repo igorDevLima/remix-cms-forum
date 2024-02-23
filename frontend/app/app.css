@@ -57,46 +57,6 @@ input[type="search"]::placeholder {
   grid-template-columns: 0.3875fr 1.6125fr;
 }
 
-#sidebar {
-  height: 100%;
-  border-right: 1px solid var(--border);
-  background: var(--background-nav);
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  gap: 50px;
-}
-
-#sidebar img {
-  width: 113px;
-}
-
-#sidebar nav {
-  width: 100%;
-}
-
-#sidebar img {
-  width: 40.8%;
-}
-
-#sidebar img,
-#sidebar nav h2 {
-  margin-left: 2.219em;
-}
-
-#sidebar nav h2 {
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-medium);
-}
-
-#sidebar .sidebar-nav {
-  display: flex;
-  flex-direction: column;
-  gap: 44px;
-}
-
 main {
   height: 100%;
   display: flex;
