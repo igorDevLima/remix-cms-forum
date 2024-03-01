@@ -1,11 +1,14 @@
 #sidebar {
   height: 100%;
+  width: 0;
   border-right: 1px solid var(--border);
   background: var(--background-nav);
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   gap: 50px;
+  position: absolute;
+  z-index: 9999;
 }
 
 #sidebar .nav-top {
@@ -14,10 +17,23 @@
   gap: 30px;
 }
 
+#sidebar.open {
+  width: 100%;
+  max-width: 227px;
+}
+
+#sidebar.open .nav-top #open-sidebar-icon {
+  display: block;
+}
+
 #sidebar .nav-top #close-sidebar-icon {
   display: none;
   width: 15px;
   cursor: pointer;
+}
+
+#sidebar.open .nav-top #close-sidebar-icon {
+  display: block;
 }
 
 #sidebar #logo {
@@ -50,23 +66,17 @@
   gap: 44px;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (min-width: 810px) {
   #sidebar {
-    width: 0;
-    position: absolute;
-    z-index: 9999;
-  }
-
-  #sidebar.open {
     width: 100%;
-    max-width: 227px;
-  }
-
-  #sidebar.open .nav-top #close-sidebar-icon {
-    display: block;
+    position: static;
   }
 
   #sidebar .nav-top #close-sidebar-icon {
+    display: none;
+  }
+
+  #sidebar.open .nav-top #close-sidebar-icon {
     display: none;
   }
 }
