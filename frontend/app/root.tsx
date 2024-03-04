@@ -36,14 +36,14 @@ export default function App() {
         <div className="container">
           <Sidebar />
           <main>
-            <header className="main-header">
+            <header id="main-header">
               <img src={iconBurger} alt="open sidebar" id="open-sidebar-icon" />
               <div className="search-input-container">
                 <SvgEdit svgUrl={iconSearch} className="search-icon" />
                 <input type="search" placeholder="Search a post or community" name="search" id="input-search" />
               </div>
             </header>
-            <div className="main-content">
+            <div id="main-content">
               <Outlet />
             </div>
           </main>
